@@ -1,0 +1,25 @@
+body {
+  background-color: #ADD8E6;
+}
+
+
+
+#clock {
+font-size: 100px;
+font-family: Arial;
+width: 900px;
+margin: 30px;
+text-align: center;
+border: 2px solid black;
+border-radius: 20px;
+}
+
+.blink {
+                animation: blinker 1.5s linear infinite;
+                color: blue;
+                font-family: sans-serif;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }

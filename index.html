@@ -1,0 +1,132 @@
+<html>
+<head> <title> Task Multimedia IMD 311 </title> 
+<link href="ASSEST/CSS/style.css" rel="stylesheet">
+</head>
+<body>
+<!--- JavaScript--->
+<center><br>
+<!--- CSS---> 
+<div id="clock">8:10:45</div>
+<!--- link current time from JavaScript---> 
+ <script src="clock2.js"></script>
+
+<font size="45px"><marquee width="500px" height="100px" class="blink"> hey! welcome to my website, don't forget to follow my igshop @onlineshop_bymuslimah~</marquee></font>
+<br><br>
+<h1><center><i><u>ITS ALL ABOUT MY FAVOURITE THINGS<center><i></u></h1>
+<br> <br>
+
+<br> 
+<!--- MY FAVOURITE SONG--->
+<hr> <center>
+<b> MY FAVOURITE SONG FOR YEAR 2023❤️ <b>
+<hr>
+<br> <br>
+
+<ol>
+<li> <b> Aziz Hedra - Somebody’s Pleasure<b></li>
+<br><br>  
+<audio controls>
+<source src= "ASSEST/AUDIO/Aziz_Hedra_Somebody’s_Pleasure.mp3" type="AUDIO/mp3"> 
+</audio>
+
+<br> <br>
+<li><b> Dalia Farhana - Langit Yang Sama<b></li>
+<br><br> 
+<audio controls>
+<source src= "ASSEST/AUDIO/Dalia _Farhana_Langit _Yang _Sama.mp3" type="AUDIO/mp3"> 
+</audio>
+
+
+<br> <br>
+<li><b> [SKZ RECORD] BANG CHAN - 인정하기 싫어 (i hate to admit)<b></li>
+<br><br> 
+<audio controls>
+<source src= "ASSEST/AUDIO/I_HATE_TO_ADMIT.mp3" type="AUDIO/mp3"> 
+</audio>
+
+<br> <br>
+<li><b> NABILA RAZALI - Putus <b></li>
+<br><br> 
+<audio controls>
+<source src= "ASSEST/AUDIO/NABILA_RAZALI_PUTUS.mp3" type="AUDIO/mp3"> 
+</audio>
+
+<br> <br>
+<li><b>Jessica Darrow - Surface Pressure<b></li>
+<br><br> 
+<audio controls>
+<source src= "ASSEST/AUDIO/Surface_Pressure.mp3" type="AUDIO/mp3"> 
+</audio>
+
+</ol>
+
+<br><br>
+<!---MY FAVOURITE YOUTUBE VIDEO --->
+<hr>
+<center>
+<b> MY FAVOURITE YOUTUBE VIDEO❤️ </b>
+<hr>
+<br><br>
+<font size="15px"><marquee width="700px" height="80px" class="blink">Stray Kids “소리꾼(Thunderous)” SKZOO ver. Performance Video </marquee></font>
+<br><br><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SDKIUVFAPDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br><br>
+<font size="15px"><marquee width="700px" height="80px" class="blink">Stray Kids "FAM (Korean Ver.)" M/V</marquee></font>
+<br><br><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D8WwqWS2E6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br> 
+</center>
+<!---MY FAVOURITE VIDEO --->
+<hr>
+<center>
+<b> MY FAVOURITE VIDEO OF THE YEAR❤️ </b>
+<hr>
+<br> <br> 
+<video controls Width="380px" height="300px" autoplay muted loop>
+<source src= "ASSEST/VIDEO/UMI.mp4" type="video/mp4">
+</video>
+<br> <br>
+<<video controls Width="380px" height="300px" loop>
+<source src= "ASSEST/VIDEO/WAWA_MUSLIMAH.mp4" type="video/mp4">
+</video>
+<br> <br><br>
+
+<!---embedding pdf file--->
+<hr> <center>
+<b>PDF FILE FOR INDIVIDUAL ASSIGNMENT FOR IMD 311<b>
+<hr>
+<br>
+<iframe src="ASSEST/PDF/GUIDELINE IMD311_2023_Individual.pdf" width="1200px" height="950px">
+</iframe>
+<br<br><br>
+<script> setInterval(showTime, 1000);
+function showTime() {
+	let time = new Date();
+	let hour = time.getHours();
+	let min = time.getMinutes();
+	let sec = time.getSeconds();
+	am_pm = "AM";
+
+	if (hour > 12) {
+		hour -= 12;
+		am_pm = "PM";
+	}
+	if (hour == 0) {
+		hr = 12;
+		am_pm = "AM";
+	}
+
+	hour = hour < 10 ? "0" + hour : hour;
+	min = min < 10 ? "0" + min : min;
+	sec = sec < 10 ? "0" + sec : sec;
+
+	let currentTime = hour + ":"
+			+ min + ":" + sec + am_pm;
+
+	document.getElementById("clock")
+			.innerHTML = currentTime;
+}
+showTime();
+</script>
+</body>
+</html>
